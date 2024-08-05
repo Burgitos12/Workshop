@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Workshop Git</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Workshop</h1>
+
+        <h2 class="title">Control de Versiones</h2>
+
+        <div class="text-box">
+            <p class="text">
+                El control de versiones es un sistema que registra y gestiona los cambios en archivos a lo largo del tiempo,
+                facilitando la colaboración y el seguimiento de modificaciones. Se utiliza principalmente en desarrollo de
+                software.
+            </p>
+        </div>
+
+        <img class="imagen-hover" src="img/control.png" alt="" width="500px">
+
+        <h3 class="title">¿Qué es Git?</h3>
+
+        <div class="text-box">
+            <p class="text">Git es un sistema distribuido de control de versiones, gratuito y de código abierto
+                bajo licencia GPLv2. Fue diseñado originalmente por Linus Torvalds12, creador del
+                kernel de Linux.
+
+                El logo de Git representa la posibilidad de crear bifurcaciones de tu código
+                Git fue concebido con la idea de ofrecer un gran rendimiento, ocupar menos espacio
+                en disco y evitar la necesidad de un servidor central para que pudiera ser distribuido.
+                De hecho, esto último es lo que hacía que fuese realmente novedoso respecto a
+                otras alternativas del momento como Subversion, que tenían una solución más
+                centralizada.</p>
+        </div>
+
+        <img class="imagen-hover" src="img/git.png" alt="" width="500px">
+
+        <h3 class="title">¿Qué es un repositorio?</h3>
+
+        <div class="text-box">
+            <p class="text">Un repositorio es el almacenamiento de archivos y su historial de cambios.</p>
+        </div>
+
+        <img class="imagen-hover" src="img/repositorio.png" alt="" width="500px">
+
+        <div class="text-box">
+            <p class="text"><strong>Repositorio Local:</strong> Almacenado en la máquina del desarrollador.</p>
+        </div>
+
+        <img class="imagen-hover" src="img/local.png" alt="" width="500px">
+
+        <div class="text-box">
+            <p class="text"><strong>Repositorio Remoto:</strong> Almacenado en un servidor remoto y accesible para otros colaboradores.</p>
+        </div>
+
+        <img class="imagen-hover" src="img/remoto.png" alt="" width="500px">
+
+        <h3 class="title">¿Qué es GitHub?</h3>
+
+        <div class="text-box">
+            <p class="text">GitHub es una plataforma de alojamiento para proyectos Git, que facilita la colaboración y el control de
+                versiones en proyectos de software.</p>
+        </div>
+
+        <img class="imagen-hover" src="img/GitHub.jpeg" alt="" width="500px">
+
+        <h3 class="title">¿Qué es una rama en Git y para qué sirve?</h3>
+
+        <div class="text-box">
+            <p class="text">Una rama en Git es una versión paralela del repositorio que permite trabajar en diferentes características de
+                manera aislada antes de fusionarlas con la rama principal.</p>
+        </div>
+
+        <img class="imagen-hover" src="img/rama.webp" alt="" width="500px">
+
+        <h3 class="title">Estados en Git</h3>
+
+        <div class="text-box">
+            <p class="text">• modificado (modified): El archivo contiene cambios pero todavía no han sido
+                marcados para ser confirmados. Se encuentra en el directorio de trabajo. <br>
+                • preparado (staged): Son los archivos que han sido modificados en el directorio
+                de trabajo y se han marcado como preparados para ser confirmados en el
+                repositorio local. Se encuentran en un área temporal transitoria. Esta acción
+                recibe el nombre de add. <br>
+                • confirmado (committed): El archivo se encuentra grabado en el repositorio
+                local. Esta acción recibe el nombre de commit.</p>
+
+                <img class="imagen-hover" src="img/estado.png" alt="" width="500px">
+        </div>
+
+        <h3 class="title">¿Qué es la terminal, consola o línea de comandos y para qué sirve?</h3>
+
+        <div class="text-box">
+            <p class="text">Terminal
+                Definición: Interfaz que permite acceder a la línea de comandos para ejecutar instrucciones.
+                Propósito: Interactuar con el sistema operativo sin una interfaz gráfica; realizar tareas como gestión de archivos y ejecución de programas.
+                Ejemplos: Terminal en Linux y macOS; Command Prompt (CMD) y PowerShell en Windows. <br>
+                Consola
+                Definición: Entorno donde se ejecutan los comandos. Puede referirse al dispositivo físico o al programa que emula dicho dispositivo.
+                Propósito: Facilita el acceso a una shell para introducir y ejecutar comandos. Parte de la terminal.
+                Ejemplos: Ventana de la terminal en sistemas modernos. <br>
+                Línea de Comandos
+                Definición: Interfaz textual dentro de la terminal o consola para ingresar comandos.
+                Propósito: Ejecutar comandos específicos, automatizar tareas, y manipular archivos y procesos.
+                Ejemplos: Comandos como ls (listar archivos), cd (cambiar directorio), dir (listar archivos en Windows), y git commit (hacer commits en Git). <br>
+                Usos Comunes
+                Gestión de Archivos: Copiar, mover, renombrar y eliminar archivos.
+                Configuración del Sistema: Ajustar configuraciones y gestionar procesos.
+                Automatización: Escribir scripts para tareas repetitivas.
+                Desarrollo: Compilar código y gestionar versiones con herramientas como Git.
+                Diagnóstico: Obtener información del sistema y solucionar problemas.</p>
+        </div>
+
+        <h3 class="title">Comandos</h3>
+
+        <div class="text-box">
+            <p class="text">
+                ls: Lista los archivos y directorios en el directorio actual. <br>
+                cd &lt;directorio&gt;:Cambia al directorio especificado. <br>
+                cd .. : Retrocede un nivel en el sistema de archivos. <br>
+                pwd : Muestra la ruta del directorio actual. <br>
+                mkdir &lt;nombre&gt;: Crea un nuevo directorio con el nombre especificado. <br>
+                touch &lt;nombre&gt;: Crea un nuevo archivo vacío con el nombre especificado. <br>
+                rm &lt;nombre&gt;: Elimina el archivo especificado. <br>
+                cp &lt;nombre&gt; &lt;directorio&gt;: Copia el archivo especificado al directorio indicado. <br>
+                mv &lt;nombre&gt; &lt;directorio&gt;: Mueve el archivo especificado al directorio indicado. <br>
+            </p>
+           
+        </div>
+    </div>
+</body>
+
+</html>
+
+
